@@ -11,8 +11,8 @@
     <a href="#-observações">📌 Observações</a>
 </p>
 
-<h1 align="center">
-    <img style="border-radius: 10px" height="auto" alt="light_mode" title="light_mode" src=".github/light_mode.png"/>
+<h1 style="display: flex" align="center">
+    <img width="600" style="border-radius: 10px" height="auto" alt="light_mode" title="light_mode" src=".github/light_mode.png"/>
     <img style="border-radius: 10px" height="auto" alt="dark_mode" title="dark_mode" src=".github/dark_mode.png"/>
 </h1>
 ## 🖥 Projeto
