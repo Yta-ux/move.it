@@ -2,15 +2,19 @@
     <img alt="move.it" title="move.it" src=".github/logo.png" />
 </h1>
 
-<p align=""center>
-    <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-executar-o-projeto">Execução do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-observações">Observações</a>
+<p align="center">
+    <a href="#-projeto">🖥 Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-tecnologias">👨‍💻 Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-executar-o-projeto">🖇 Execução do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-layout">🎨 Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-licença">📃 Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-observações">📌 Observações</a>
 </p>
 
+<h1 align="center">
+    <img style="border-radius: 10px" height="auto" alt="light_mode" title="light_mode" src=".github/light_mode.png"/>
+    <img style="border-radius: 10px" height="auto" alt="dark_mode" title="dark_mode" src=".github/dark_mode.png"/>
+</h1>
 ## 🖥 Projeto
 O move.it é um projeto que aplica a técnica de pomodoro, junto a um sistema desafios, que se baseiam em na realização de pequenos exrcícios físicos, para um descanso de pessoas que passam muito tempo sentadas.
 
