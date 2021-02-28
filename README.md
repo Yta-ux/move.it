@@ -6,15 +6,28 @@ As tecnologias usadas nesse projeto foram:
 - [React](https://reactjs.org)
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Node.js](https://nodejs.org/en/)
 
 ## Executar o Projeto
 Para executar o projeto, siga os seguintes passos:
+- Primeiro verifique se você possui o yarn e node. Caso não possua, instale antes de prosseguir
+
 - Clone o repositório
+    ```bash
+    $ git clone https://github.com/Yta-ux/move.it.git
+    ```
+- Instale as dependências
+    ```bash
+        yarn
+     ```
+- Acesse o [localhost:3000](http://localhost:3000)
+
 ## 🎨 Layout
 Os layouts usados no projeto foram:
 - [Layout Princiapal](https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/Move.it-1.0)
 - [Layout do tema dark](https://www.figma.com/file/mqqwYS7zVEa9NlVX0NChJ2/Move.it-Dark-Theme?node-id=160%3A2761)
-Para acessar os layouts, é necessário ter uma conta no [Figma](http://figma.com/).
+&nbsp;Para acessar os layouts, é necessário ter uma conta no [Figma](http://figma.com/).
 
 
 ##  📃 Licença
