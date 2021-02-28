@@ -3,7 +3,12 @@
 </h1>
 
 <p align=""center>
-    <a href="#-Projeto">Projeto</a>
+    <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-executar-o-projeto">Execução do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-observações">Observações</a>
 </p>
 
 ## 🖥 Projeto
@@ -17,7 +22,7 @@ As tecnologias usadas nesse projeto foram:
 - [Yarn](https://yarnpkg.com/)
 - [Node.js](https://nodejs.org/en/)
 
-## Executar o Projeto
+## 🖇 Executar o Projeto
 Para executar o projeto, siga os seguintes passos:
 - Primeiro verifique se você possui o yarn e node. Caso não possua, instale antes de prosseguir
 
