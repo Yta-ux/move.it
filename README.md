@@ -11,9 +11,9 @@
     <a href="#-observações">📌 Observações</a>
 </p>
 
-<h1 style="display: flex" align="center">
-    <img width="600" style="border-radius: 10px" height="auto" alt="light_mode" title="light_mode" src=".github/light_mode.png"/>
-    <img style="border-radius: 10px" height="auto" alt="dark_mode" title="dark_mode" src=".github/dark_mode.png"/>
+<h1 style="display: flex; flex-direction: row" align="center">
+    <img width="500" style="border-radius: 10px" height="auto" alt="light_mode" title="light_mode" src=".github/light_mode.png"/>
+    <img width="500" style="border-radius: 10px" height="auto" alt="dark_mode" title="dark_mode" src=".github/dark_mode.png"/>
 </h1>
 ## 🖥 Projeto
 O move.it é um projeto que aplica a técnica de pomodoro, junto a um sistema desafios, que se baseiam em na realização de pequenos exrcícios físicos, para um descanso de pessoas que passam muito tempo sentadas.
