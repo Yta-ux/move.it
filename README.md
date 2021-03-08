@@ -12,7 +12,7 @@
 </p>
 
 <h1 style="display: flex; flex-direction: row" align="center">
-    <img width="500" style="border-radius: 10px" height="auto" alt="pomo.fy" title="Tela Principal" src=".github/Pomo_fy.png"/>
+    <img width="450" style="border-radius: 10px" height="auto" alt="pomo.fy" title="Tela Principal" src=".github/Pomo_fy.png"/>
     <img width="400" style="border-radius: 10px" height="auto" alt="Tela principal" title="Tela Principal" src=".github/principal.png"/>
 </h1>
 
