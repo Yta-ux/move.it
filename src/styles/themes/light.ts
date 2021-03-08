@@ -3,7 +3,9 @@ export default {
   
     colors: {
       red: '#E83F5B',
+      red_ligth: '#FFF5F5',
       green: '#4CD62B',
+      green_light: '#F7FFF5',
       blue: '#5965E0',
       blue_dark:'#4953b8',
       blue_twitter: '#2AA9E0',

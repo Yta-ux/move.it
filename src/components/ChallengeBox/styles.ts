@@ -78,20 +78,30 @@ export const Active = styled.div`
         font-size: 1rem;
         font-weight: 600;
 
-        transition: filter 0.2s;
+        transition: background-color 0.2s;
     }
 
     .challengeFailedButton{
-        background-color: ${props => props.theme.colors.red};
+        background-color: ${props => props.theme.colors.red_ligth};
+        color: ${props => props.theme.colors.red};
     }
 
     .challengeSucceededButton{
-        background-color: ${props => props.theme.colors.green};
+        background-color: ${props => props.theme.colors.green_light};
+        color: ${props => props.theme.colors.green};
     }
 
-    .challengeActive footer button:hover{
-        filter: brightness(0.9);
+    .challengeFailedButton:hover{
+        background-color: ${props => props.theme.colors.red};
+        color: ${props => props.theme.colors.white};
+        
     }
+
+    .challengeSucceededButton:hover{
+        background-color: ${props => props.theme.colors.green};
+        color: ${props => props.theme.colors.white};
+    }
+
 `;
 
 export const NoActive = styled.div`

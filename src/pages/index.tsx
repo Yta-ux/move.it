@@ -1,84 +1,73 @@
-import { CompletedChallenges } from "../components/CompletedChallenges";
-import Countdown from "../components/Countdown";
-import {ExperienceBar} from  '../components/ExperienceBar';
-import Profile from '../components/Profile';
-import {GetServerSideProps} from 'next';
+import styles from '../styles/pages/Profile.module.css';
+import {VscGithub} from 'react-icons/vsc';
+import {CgArrowRightO} from 'react-icons/cg';
 
 import Head from 'next/head';
 
-import styles from "../styles/pages/Home.module.css";
-import ChallengeBox from '../components/ChallengeBox';
-import React, { useContext, useState } from "react";
-import { CountdownProvider } from "../contexts/CountdownContext";
-import { ChallengesProvider } from "../contexts/ChallengeContext";
-import SwitchThemes from "../components/SwitchTheme";
-import GlobalStyle from '../styles/global';
-import {ThemeProvider } from "styled-components";
-import light from "../styles/themes/light";
-import dark from "../styles/themes/dark";
+import Link from 'next/link';
+import { useCallback, useRef, useState } from 'react';
+import { useRouter } from 'next/dist/client/router';
 
-import usePersistedState from '../utils/usePersistedState';
+const User: React.FC = () =>  {
+  const inputRef = useRef<HTMLInputElement>(null);
 
-interface HomeProps{
-  level: number;
-  currentExperience: number;
-  challengesCompleted: number;
-}
+  const [isFocused, setIsFocused] = useState(false);
 
+  const handleFocus = useCallback(() => {
+    setIsFocused(true);
+  }, []);
 
-export default function Home(props: HomeProps) {
+  const handleBlur = useCallback(() => {
+    setIsFocused(false);
+  }, []);
 
-  const [theme, setTheme] = usePersistedState('theme', light);
+  const { push } = useRouter();
+  const [username, setUsername] = useState('');
 
-  const toggleTheme = () => {
-    setTheme(theme.title === 'light' ? dark : light);
-  }
-
-  return (
-    <ThemeProvider theme={theme}>
-    <ChallengesProvider level={props.level} currentExperience={props.currentExperience} challengesCompleted={props.challengesCompleted}>
-   
-    <GlobalStyle />
-
-      <div className={styles.container}>
-        <Head>
-          <title>Início | Move.it</title>
-        </Head>
-      
-      <SwitchThemes toggleTheme={toggleTheme}/>
-      <ExperienceBar />
-
-    <CountdownProvider>
-      <section>
-        <div>
-            <Profile />
-
-            <CompletedChallenges />
-
-            <Countdown />
-        </div>
-            
-        <ChallengeBox/>
-        <div>
-
-        </div>
-      </section>
-    </CountdownProvider>
-      </div>
-    </ChallengesProvider>
-    </ThemeProvider>
-  )
-}
-
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  
-  const {level, currentExperience, challengesCompleted} = ctx.req.cookies;
-  
-  return {
-    props: {
-      level: Number(level),
-      currentExperience: Number(currentExperience),
-      challengesCompleted: Number(challengesCompleted)
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (username) {
+      push(`/${username}`);
     }
   }
+
+  return(
+    <div className={styles.container}>
+      <Head>
+        <title>Home | Pomo.fy</title>
+      </Head>
+
+      
+
+      <div className={styles.content}>
+        <img src="Logo.svg" alt="logo"/>
+        <strong>Bem- vindo</strong>
+
+      <div className={styles.title}>
+          < VscGithub size={36} color="#8A4E1A"/>
+            <span>   
+              Faça login com seu Github para começar
+            </span>
+      </div>
+
+      <div className={styles.posForm}>
+        <form onSubmit={handleSubmit}>
+          <input type="text" 
+          placeholder="Digite seu username" 
+          onChange={(e) => setUsername(e.target.value)}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          ref={inputRef}/>
+
+         
+      
+        <button type="submit">
+              <CgArrowRightO size={24} color="#FFFFFF"/>  
+        </button>
+        </form>
+        </div>
+      </div>
+    </div>
+);
 }
+export default User;

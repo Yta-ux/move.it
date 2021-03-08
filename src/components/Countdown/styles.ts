@@ -1,3 +1,4 @@
+import { prependOnceListener } from 'process';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -80,11 +81,22 @@ export const ActiveCountdownButton = styled.div`
 .countdownButton:not(:disabled):hover{
     background-color: ${props => props.theme.colors.red};
     color: ${props => props.theme.colors.white};
+    .arrow{
+        fill: ${props => props.theme.colors.white};
+    }
 }
 `;
 
 export const Image = styled.image`
     margin-left: 0.5rem;
+`;
+
+export const ImageCancel = styled.image`
+    margin-left: 0.5rem;
+
+    .arrow{
+        fill: ${props => props.theme.colors.title_primary};
+    }
 `;
 
 export const DisableCountdownButton = styled.div`

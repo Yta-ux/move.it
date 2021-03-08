@@ -2,15 +2,20 @@ import { useContext } from 'react';
 import { ChallengeContext } from '../../contexts/ChallengeContext';
 import {Container} from './styles';
 
-const Profile: React.FC = () => {
+interface UserGithub{
+    name: string;
+    avatar_url: string;
+}
+
+const Profile: React.FC<UserGithub> = (user: UserGithub) => {
 
     const {level}= useContext(ChallengeContext)
 
     return(
         <Container>
-            <img src="https://avatars.githubusercontent.com/u/62409856?s=460&u=36cfdc5f8d633c9504ffe618110cd3c7af75ff04&v=4" alt="Ítalo Gustavo" className="profilePicture"/>
+            <img src={user?.avatar_url} alt={user?.name} className="profilePicture"/>
         <div className="informationProfile">
-            <strong className="nameProfile">Ítalo Gustavo</strong>
+            <strong className="nameProfile">{user?.name}</strong>
             <p>
                 <img src="icons/level.svg" alt="Level"/>
                 Level {level}
