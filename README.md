@@ -1,5 +1,5 @@
 <h1 align="center"> 
-    <img alt="pomo.fy" title="pomo.fy" src=".github/logo.png" />
+    <img alt="pomo.fy" title="pomo.fy" src=".github/logo.svg" />
 </h1>
 
 <p align="center">
