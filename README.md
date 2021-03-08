@@ -1,5 +1,5 @@
 <h1 align="center"> 
-    <img alt="move.it" title="move.it" src=".github/logo.png" />
+    <img alt="pomo.fy" title="pomo.fy" src=".github/logo.png" />
 </h1>
 
 <p align="center">
@@ -12,8 +12,8 @@
 </p>
 
 <h1 style="display: flex; flex-direction: row" align="center">
-    <img width="400" style="border-radius: 10px" height="auto" alt="light_mode" title="light_mode" src=".github/light_mode.png"/>
-    <img width="400" style="border-radius: 10px" height="auto" alt="dark_mode" title="dark_mode" src=".github/dark_mode.png"/>
+    <img width="400" style="border-radius: 10px" height="auto" alt="pomo.fy" title="Tela Principal" src=".github/Pomo_fy.png"/>
+    <img width="400" style="border-radius: 10px" height="auto" alt="Tela principal" title="Tela Principal" src=".github/principal.png"/>
 </h1>
 
 <h4 align="center"> 

@@ -5,7 +5,7 @@
 
     background-color: #1C4366;
     
-    background-image: url(simbolo.png);
+    background-image: url(/simbolo.png);
   
     display: flex;
     align-items: center;
