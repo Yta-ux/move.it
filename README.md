@@ -37,7 +37,7 @@ Para executar o projeto, siga os seguintes passos:
 
 - Clone o repositório
     ```bash
-    $ git clone https://github.com/Yta-ux/move.it.git
+    $ git clone https://github.com/Yta-ux/pomo.fy.git
     ```
 - Instale as dependências
     ```bash
