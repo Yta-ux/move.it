@@ -11,6 +11,7 @@
     "-": "^0.0.1",
     "@types/styled-components": "^5.1.7",
     "D": "^1.0.0",
+    "browserslist": "^4.16.6",
     "js-cookie": "^2.2.1",
     "next": "10.0.7",
     "postcss": "^8.3.0",
